@@ -106,7 +106,7 @@ async function predictPrice() {
     // }
 
     // send all data to the server for prediction //
-    const res = await fetch("http://localhost:5000/predict", {
+    const res = await fetch("https://render.com/docs/web-services#port-binding", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
