@@ -6,7 +6,7 @@ A machine learning-powered web application that predicts the price of a laptop b
 Coming Soon...
 
 ## 📷 Screenshot
-![Laptop Price Predictor UI](https://via.placeholder.com/800x400.png?text=Project+Screenshot)
+![Laptop Price Predictor UI](Screenshot 2025-04-09 002643.png)
 
 ---
 
