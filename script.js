@@ -13,7 +13,7 @@ function fillSelect(id, options) {
 // this method is used to fill the select options with the data from the server
 // it is called when the page loads
 async function fetchOptions() {
-    const res = await fetch("http://localhost:5000/options");
+    const res = await fetch(" https://render.com/docs/web-services#port-binding");
     const data = await res.json();
     fillSelect("brand", data.Company);
     fillSelect("type", data.TypeName);
