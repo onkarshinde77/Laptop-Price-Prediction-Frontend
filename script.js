@@ -13,7 +13,7 @@ function fillSelect(id, options) {
 // this method is used to fill the select options with the data from the server
 // it is called when the page loads
 async function fetchOptions() {
-    const res = await fetch(" https://render.com/docs/web-services#port-binding");
+    const res = await fetch("https://laptop-price-prediction-backend.onrender.com/options");
     const data = await res.json();
     fillSelect("brand", data.Company);
     fillSelect("type", data.TypeName);
@@ -106,7 +106,7 @@ async function predictPrice() {
     // }
 
     // send all data to the server for prediction //
-    const res = await fetch("https://render.com/docs/web-services#port-binding", {
+    const res = await fetch("https://laptop-price-prediction-backend.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
