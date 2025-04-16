@@ -104,6 +104,7 @@ async function predictPrice() {
     //     fillSelect("os", ["macOS"]);
     //     payload.OpSys = "macOS";
     // }
+    
 
     // send all data to the server for prediction //
     const res = await fetch("https://laptop-price-prediction-backend.onrender.com/predict", {
@@ -133,7 +134,6 @@ document.getElementById("brand").addEventListener("change", () => {
         // Restore full OS list for other brands
         fillSelect("os", [
             "Windows",
-            "macOs",
             "other/No os/Linux"
         ]);
 
